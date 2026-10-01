@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orlando Events Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-header">
+      <div>
+        <h1>Orlando Events</h1>
+        <div class="subtitle" id="event-count-subtitle">Loading events…</div>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <div class="filters" id="filter-bar"></div>
+      <div class="view-toggle">
+        <button data-view="calendar" data-active="true">Calendar</button>
+        <button data-view="agenda">List</button>
+      </div>
+    </div>
+
+    <div class="month-nav" id="month-nav" hidden>
+      <button id="prev-month" aria-label="Previous month">&larr;</button>
+      <h2 id="month-label"></h2>
+      <button id="next-month" aria-label="Next month">&rarr;</button>
+      <button class="today-btn" id="today-btn">Today</button>
+    </div>
+
+    <div id="calendar-view"></div>
+    <div id="agenda-view" hidden></div>
+
+    <footer class="page-footer">
+      Events pulled from 4Roots Farm, The House on Lang, Those Guys Cafe, and manually curated finds around Orlando.
+      Details can change &mdash; check the source link before heading out.
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
