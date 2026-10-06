@@ -15,23 +15,42 @@
       </div>
     </header>
 
-    <div class="toolbar">
-      <div class="filters" id="filter-bar"></div>
-      <div class="view-toggle">
-        <button data-view="calendar" data-active="true">Calendar</button>
-        <button data-view="agenda">List</button>
-      </div>
-    </div>
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="side-card weekend-section" id="weekend-section" hidden>
+          <h2>This weekend</h2>
+          <div class="side-sub" id="weekend-range"></div>
+          <div class="weekend-list" id="weekend-grid"></div>
+        </section>
 
-    <div class="month-nav" id="month-nav" hidden>
-      <button id="prev-month" aria-label="Previous month">&larr;</button>
-      <h2 id="month-label"></h2>
-      <button id="next-month" aria-label="Next month">&rarr;</button>
-      <button class="today-btn" id="today-btn">Today</button>
-    </div>
+        <section class="side-card types-section">
+          <div class="type-head">
+            <h2>Event types</h2>
+            <button class="type-reset" id="type-reset" hidden>Show all</button>
+          </div>
+          <div id="filter-bar"></div>
+        </section>
+      </aside>
 
-    <div id="calendar-view"></div>
-    <div id="agenda-view" hidden></div>
+      <main class="main-col">
+        <div class="toolbar">
+          <div class="view-toggle">
+            <button data-view="calendar" data-active="true">Calendar</button>
+            <button data-view="agenda">List</button>
+          </div>
+        </div>
+
+        <div class="month-nav" id="month-nav" hidden>
+          <button id="prev-month" aria-label="Previous month">&larr;</button>
+          <h2 id="month-label"></h2>
+          <button id="next-month" aria-label="Next month">&rarr;</button>
+          <button class="today-btn" id="today-btn">Today</button>
+        </div>
+
+        <div id="calendar-view"></div>
+        <div id="agenda-view" hidden></div>
+      </main>
+    </div>
 
     <footer class="page-footer">
       Events pulled from 4Roots Farm, The House on Lang, Those Guys Cafe, and manually curated finds around Orlando.

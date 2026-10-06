@@ -12,7 +12,7 @@ const CATEGORY_LABELS = {
 
 const state = {
   events: [],
-  activeCategories: new Set(), // empty set = show all
+  hiddenCategories: new Set(), // unchecked event types
   view: "calendar",
   cursor: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
 };
@@ -56,8 +56,7 @@ function dayKey(date) {
 }
 
 function matchesActiveFilters(ev) {
-  if (state.activeCategories.size === 0) return true;
-  return ev.categories.some((c) => state.activeCategories.has(c));
+  return ev.categories.some((c) => !state.hiddenCategories.has(c));
 }
 
 function getFilteredEvents() {
@@ -70,39 +69,40 @@ function renderFilterBar() {
   const bar = document.getElementById("filter-bar");
   bar.innerHTML = "";
 
-  const presentCategories = new Set();
-  state.events.forEach((ev) => ev.categories.forEach((c) => presentCategories.add(c)));
-
-  const clearChip = document.createElement("button");
-  clearChip.className = "filter-chip clear-chip";
-  clearChip.textContent = "All";
-  clearChip.dataset.active = state.activeCategories.size === 0 ? "true" : "false";
-  clearChip.addEventListener("click", () => {
-    state.activeCategories.clear();
-    renderFilterBar();
-    renderCurrentView();
-  });
-  bar.appendChild(clearChip);
+  const counts = {};
+  state.events.forEach((ev) => ev.categories.forEach((c) => (counts[c] = (counts[c] || 0) + 1)));
 
   Object.keys(CATEGORY_LABELS)
-    .filter((cat) => presentCategories.has(cat))
+    .filter((cat) => counts[cat])
     .forEach((cat) => {
-      const chip = document.createElement("button");
-      chip.className = "filter-chip";
-      chip.dataset.active = state.activeCategories.has(cat) ? "true" : "false";
-      chip.style.setProperty("--dot-color", `var(--cat-${cat})`);
-      chip.innerHTML = `<span class="dot"></span>${CATEGORY_LABELS[cat]}`;
-      chip.addEventListener("click", () => {
-        if (state.activeCategories.has(cat)) {
-          state.activeCategories.delete(cat);
+      const row = document.createElement("label");
+      row.className = "type-row";
+      row.style.setProperty("--box-color", `var(--cat-${cat})`);
+
+      const box = document.createElement("input");
+      box.type = "checkbox";
+      box.checked = !state.hiddenCategories.has(cat);
+      box.addEventListener("change", () => {
+        if (box.checked) {
+          state.hiddenCategories.delete(cat);
         } else {
-          state.activeCategories.add(cat);
+          state.hiddenCategories.add(cat);
         }
         renderFilterBar();
         renderCurrentView();
       });
-      bar.appendChild(chip);
+
+      const name = document.createElement("span");
+      name.textContent = CATEGORY_LABELS[cat];
+      const count = document.createElement("span");
+      count.className = "type-count";
+      count.textContent = counts[cat];
+
+      row.append(box, name, count);
+      bar.appendChild(row);
     });
+
+  document.getElementById("type-reset").hidden = state.hiddenCategories.size === 0;
 }
 
 // ---------- Calendar view ----------
@@ -239,6 +239,71 @@ function renderAgenda() {
   });
 }
 
+// ---------- This weekend ----------
+
+function getWeekendRange(now = new Date()) {
+  // Fri-Sun of the current week. On Saturday it's Sat-Sun, on Sunday just Sunday.
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const d = today.getDay();
+  const addDays = (date, n) => new Date(date.getFullYear(), date.getMonth(), date.getDate() + n);
+  if (d === 0) return { start: today, end: today };
+  if (d === 6) return { start: today, end: addDays(today, 1) };
+  const friday = addDays(today, 5 - d);
+  return { start: friday, end: addDays(friday, 2) };
+}
+
+function renderWeekend() {
+  const section = document.getElementById("weekend-section");
+  const grid = document.getElementById("weekend-grid");
+  const { start, end } = getWeekendRange();
+  const fmt = (date) =>
+    date.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+  document.getElementById("weekend-range").textContent =
+    dayKey(start) === dayKey(end) ? fmt(start) : `${fmt(start)} – ${fmt(end)}`;
+
+  const startKey = dayKey(start);
+  const endKey = dayKey(end);
+  const events = getFilteredEvents()
+    .filter((ev) => {
+      const key = dayKey(parseEventDate(ev));
+      return key >= startKey && key <= endKey;
+    })
+    .sort((a, b) => parseEventDate(a) - parseEventDate(b));
+
+  grid.innerHTML = "";
+  if (events.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "weekend-empty";
+    empty.textContent =
+      state.hiddenCategories.size === 0
+        ? "No events listed for this weekend yet."
+        : "Nothing this weekend in the selected types.";
+    grid.appendChild(empty);
+  } else {
+    events.forEach((ev) => grid.appendChild(renderWeekendItem(ev)));
+  }
+  section.hidden = false;
+}
+
+function renderWeekendItem(ev) {
+  const item = document.createElement("div");
+  item.className = "weekend-item";
+  item.style.setProperty("--item-accent", `var(--cat-${ev.categories[0] || "other"})`);
+
+  const title = document.createElement("div");
+  title.className = "wi-title";
+  title.textContent = ev.title;
+
+  const meta = document.createElement("div");
+  meta.className = "wi-meta";
+  const day = parseEventDate(ev).toLocaleDateString(undefined, { weekday: "short" });
+  meta.textContent = `${day} · ${formatEventTime(ev)}`;
+
+  item.append(title, meta);
+  item.addEventListener("click", () => openModal(ev));
+  return item;
+}
+
 function renderEventCard(ev) {
   const card = document.createElement("div");
   card.className = "event-card";
@@ -333,6 +398,8 @@ function renderCurrentView() {
   document.getElementById("event-count-subtitle").textContent =
     `${count} upcoming event${count === 1 ? "" : "s"}`;
 
+  renderWeekend();
+
   if (state.view === "calendar") {
     renderCalendar();
   } else {
@@ -369,6 +436,12 @@ async function init() {
   document.getElementById("today-btn").addEventListener("click", () => {
     const now = new Date();
     state.cursor = new Date(now.getFullYear(), now.getMonth(), 1);
+    renderCurrentView();
+  });
+
+  document.getElementById("type-reset").addEventListener("click", () => {
+    state.hiddenCategories.clear();
+    renderFilterBar();
     renderCurrentView();
   });
 
