@@ -1,52 +1,47 @@
 :root {
-  /* Palette: Licorice #1C150F, Dark moss green #5C6844, Dutch white #D7CEAF,
-     Ash gray #B6CCCA, Slate gray #67898C */
-  --bg: #d7ceaf;
-  --surface: #e7e1ca;
-  --border: #b9b08f;
-  --text: #1c150f;
-  --text-muted: #5b5440;
-  --accent: #5c6844;
-  --accent-soft: #b6ccca;
-  --on-accent: #f3efdd;
-  --today-ring: #5c6844;
+  /* Palette: Roman Coffee #75564d, Tumbleweed #dbaf8a, Hit Gray #a2aeb3,
+     Bermuda Gray #6f8ca4, Cello #203a58 */
+  --bg: #f3e7da;
+  --surface: #fbf6ef;
+  --border: #e0c9b0;
+  --text: #203a58;
+  --text-muted: #4d6279;
+  --accent: #203a58;
+  --accent-soft: #ecd6bf;
+  --on-accent: #f8efe4;
+  --today-ring: #203a58;
 
-  /* Sidebar (Deep Matcha greens) */
-  --side-bg: #e8efe2;
-  --side-border: #c6d3a0;
-  --side-heading: #3d5526;
-  --side-text: #25391a;
-  --side-muted: #4a6330;
-  --side-item-bg: #f6f9f2;
+  /* Sidebar (Roman Coffee) */
+  --side-bg: #75564d;
+  --side-border: #8a6a60;
+  --side-heading: #f8efe4;
+  --side-text: #f8efe4;
+  --side-muted: #f0e2d4;
+  --side-item-bg: #62463f;
 
-  --cat-food-drink: #9a5b30;
-  --cat-arts-culture: #7a5c72;
-  --cat-music: #3a6670;
-  --cat-wellness: #5c6844;
-  --cat-market: #7f6a1f;
-  --cat-workshop-class: #85503f;
-  --cat-community: #4f7073;
-  --cat-family-kids: #567548;
-  --cat-other: #6f685c;
+  --cat-food-drink: #9a4a32;
+  --cat-arts-culture: #6e4b66;
+  --cat-music: #203a58;
+  --cat-wellness: #55705a;
+  --cat-market: #8f6226;
+  --cat-workshop-class: #75564d;
+  --cat-community: #4f6f8a;
+  --cat-family-kids: #3d7677;
+  --cat-other: #66717a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1c150f;
-    --surface: #2a2118;
-    --border: #4a4030;
-    --text: #d7ceaf;
-    --text-muted: #a8a084;
-    --accent: #b6ccca;
-    --accent-soft: #2f3b3a;
-    --on-accent: #1c150f;
-    --today-ring: #b6ccca;
-    --side-bg: #25391a;
-    --side-border: #3d5526;
-    --side-heading: #c6d3a0;
-    --side-text: #e8efe2;
-    --side-muted: #a9b98a;
-    --side-item-bg: #1f2f16;
+    --bg: #101e30;
+    --surface: #17293f;
+    --border: #2c4563;
+    --text: #f1e4d6;
+    --text-muted: #a2aeb3;
+    --accent: #dbaf8a;
+    --accent-soft: #2a4260;
+    --on-accent: #1b2c42;
+    --today-ring: #dbaf8a;
+    --cat-music: #34588a;
   }
 }
 
@@ -491,4 +486,38 @@ footer.page-footer {
   .sidebar { position: static; max-height: none; overflow: visible; }
   #filter-bar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 12px; }
   .toolbar { justify-content: flex-start; }
+}
+
+/* Typography: Instrument Serif headings, Newsreader body */
+body {
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+}
+
+button, input { font-family: inherit; }
+
+h1, h2, h3,
+.event-card .event-title,
+.weekend-item .wi-title,
+.agenda-date-heading {
+  font-family: "Instrument Serif", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+header.page-header h1 { font-size: 2.8rem; line-height: 1; }
+.month-nav h2 { font-size: 1.7rem; }
+.side-card h2 { font-size: 1.35rem; }
+.modal h3 { font-size: 1.7rem; }
+.event-card .event-title { font-size: 1.25rem; line-height: 1.15; }
+.weekend-item .wi-title { font-size: 1.1rem; line-height: 1.15; }
+.agenda-date-heading { font-size: 1.25rem; }
+.event-pill { font-size: 0.78rem; font-weight: 500; }
+.calendar-grid .weekday-label { font-size: 0.78rem; }
+.weekend-item .wi-meta { font-size: 0.78rem; }
+.type-row { font-size: 0.95rem; }
+
+@media (max-width: 640px) {
+  header.page-header h1 { font-size: 2.2rem; }
+  .month-nav h2 { font-size: 1.35rem; }
 }

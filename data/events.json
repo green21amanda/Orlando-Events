@@ -1,48 +1,19 @@
 [
   {
-    "id": "b09453c77558",
-    "title": "Origin | Roots",
-    "start": "2026-10-01T18:00:00-04:00",
-    "end": "2026-10-01T21:00:00-04:00",
-    "location": "4Roots Farm Campus, 1101 N. John Young Parkway, Parkway Orlando",
-    "description": "Origin invites guests to experience not simply what is on the plate, but everything that came before it. Nestled among the gardens and fields of the 4Roots Farm Campus, Origin is an intimate dining experience where the story of every remarkable meal begins. In partnership with a celebrated guest chef, a local farmer, and 4Roots’ Chef Hari Pulapaka, each dinner is a unique exploration of the season—never repeated, and rooted in what the land has to offer at that moment. Origin is more than fine dining. It is an invitation to experience food with a deeper sense of wonder. Not simply where food is served. But where its story begins. This Month’s Theme & Featured Chef The Origin season begins with Roots , a celebration of the agricultural foundations of our region through autumn harvests and timeless cooking traditions. This one-night-only dining inaugural dinner features acclaimed Central Florida chef Kevin Fonzo , a James Beard Award semifinalist and one of Orlando’s original pioneers of the local food movement. Event Details Date: Thursday, October 1st Location: 4Roots Farm Campus – Food Forest Lawn + Barn Time: 6:00pm – 9:00pm Tickets: $175 per guest. Each ticket purchase supports local farms and the mission of 4Roots to create greater food access and education in our community.",
-    "price": "175$",
-    "categories": [
-      "community"
-    ],
-    "url": "https://4rootsfarm.org/event/origin-roots/",
-    "image": "https://4rootsfarm.org/wp-content/uploads/2026/07/4Roots-Origin_Square-Website.png",
-    "source": "4roots-farm"
-  },
-  {
-    "id": "680cf83a1b88",
-    "title": "Those Guys Cafe Pop-Up @parkwaycrossings",
-    "start": "2026-10-02",
+    "id": "7a80d8803f60",
+    "title": "Tufting Workshop",
+    "start": "2026-10-06T12:00:00-04:00",
     "end": null,
-    "location": "@parkwaycrossings (see Instagram for exact address)",
-    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
     "price": null,
     "categories": [
-      "food-drink"
+      "workshop-class",
+      "arts-culture"
     ],
-    "url": "https://instagram.com/parkwaycrossings",
+    "url": null,
     "image": null,
-    "source": "those-guys-cafe"
-  },
-  {
-    "id": "9e5c6e656f93",
-    "title": "4Roots Farmers Market",
-    "start": "2026-10-03T09:00:00-04:00",
-    "end": "2026-10-03T13:00:00-04:00",
-    "location": "4Roots Farm Campus, 1101 N. John Young Parkway, Parkway Orlando",
-    "description": "Presented by Dr. Phillips Charities All are invited to the 4Roots Farmers Market presented by Dr. Phillips Charities , hosted at the 4Roots Farm Campus every Saturday! Bring the whole family (fur family included) to shop farm-fresh produce, handcrafted goods, and support all things locally-made. In addition to the 4Roots Mobile Market (which accepts SNAP & FAB) local vendors and artisans will be on-site offering farm-fresh produce, handcrafted goods, and tasty treats. Whether you’re picking up a fresh-made snack, exploring local goods, or just spending quality time together in a beautiful setting, it’s the perfect way to support our local community.",
-    "price": null,
-    "categories": [
-      "market"
-    ],
-    "url": "https://4rootsfarm.org/event/4roots-farmers-market-5/",
-    "image": "https://4rootsfarm.org/wp-content/uploads/2025/12/Newsletter-Images_Horizontal-Collage-66.png",
-    "source": "4roots-farm"
+    "source": "rugged-perspective"
   },
   {
     "id": "941b7cf99727",
@@ -58,6 +29,22 @@
     "url": "https://www.houseonlang.com/event-details/pumpkin-painting",
     "image": "https://static.wixstatic.com/media/51f7d5_d50f73adbccf464f9cb95c161a7b4419~mv2.jpg",
     "source": "house-on-lang"
+  },
+  {
+    "id": "fc3173c57565",
+    "title": "Halloween Movie Night: Scream: No Caller ID",
+    "start": "2026-10-07T19:30:00-04:00",
+    "end": null,
+    "location": "Lamp & Shade Craft Kitchen and Cocktails",
+    "description": "Halloween movie showtime at Lamp & Shade Craft Kitchen and Cocktails. Halloween cocktail menu, all cocktails $12.",
+    "price": null,
+    "categories": [
+      "arts-culture",
+      "food-drink"
+    ],
+    "url": "https://www.instagram.com/throwsomeshadeorl/",
+    "image": null,
+    "source": "lamp-and-shade"
   },
   {
     "id": "34dcdef93240",
@@ -92,6 +79,21 @@
     "source": "4roots-farm"
   },
   {
+    "id": "24e2bbc6456d",
+    "title": "Those Guys Cafe Pop-Up @ Lakewalk at Hamlin",
+    "start": "2026-10-09T09:00:00-04:00",
+    "end": "2026-10-09T14:00:00-04:00",
+    "location": "Lakewalk at Hamlin, 14012 Shoreside Way, Winter Garden",
+    "description": "Coffee, matcha, and pastries from Those Guys Cafe's traveling cafe, 9am–2pm.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": "https://www.instagram.com/thoseguyscafe/",
+    "image": null,
+    "source": "those-guys-cafe"
+  },
+  {
     "id": "cb98841c8ec6",
     "title": "Backyard Comedy Night",
     "start": "2026-10-10T00:00:00.000Z",
@@ -105,6 +107,21 @@
     "url": "https://www.houseonlang.com/event-details/backyard-comedy-night-1-1",
     "image": "https://static.wixstatic.com/media/0deec1_1aaaad88186a4e50bb5223aa234893de~mv2.jpg",
     "source": "house-on-lang"
+  },
+  {
+    "id": "bf086c011019",
+    "title": "Those Guys Cafe Pop-Up @ MAA Baldwin Park",
+    "start": "2026-10-10T09:00:00-04:00",
+    "end": "2026-10-10T14:00:00-04:00",
+    "location": "MAA Baldwin Park, 4688 New Broad St, Orlando",
+    "description": "Coffee, matcha, and pastries from Those Guys Cafe's traveling cafe, 9am–2pm.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": "https://www.instagram.com/thoseguyscafe/",
+    "image": null,
+    "source": "those-guys-cafe"
   },
   {
     "id": "07b494510ccf",
@@ -152,6 +169,22 @@
     "source": "house-on-lang"
   },
   {
+    "id": "d333bdaebccf",
+    "title": "Pretty Little Things (Coraline Doll)",
+    "start": "2026-10-10T15:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "Listed with Coraline doll artwork. From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
     "id": "a2cc9332082a",
     "title": "Make Your Own Perfume",
     "start": "2026-10-10T18:00:00.000Z",
@@ -165,6 +198,36 @@
     "url": "https://www.houseonlang.com/event-details/make-your-own-perfume-1-13",
     "image": "https://static.wixstatic.com/media/0deec1_7d21e16a32e14bf9a6d844c81226c284~mv2.jpeg",
     "source": "house-on-lang"
+  },
+  {
+    "id": "20d797782a8a",
+    "title": "Look-Alike Coraline Doll – Pretty Little Things",
+    "start": "2026-10-11",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "Time not listed. From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
+    "id": "18c90ae3348f",
+    "title": "Those Guys Cafe Pop-Up @ Tres Ivanhoe Salon",
+    "start": "2026-10-11T09:00:00-04:00",
+    "end": "2026-10-11T14:00:00-04:00",
+    "location": "Tres Ivanhoe Salon, 1323 N Orange Ave, Orlando",
+    "description": "Coffee, matcha, and pastries from Those Guys Cafe's traveling cafe, 9am–2pm.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": "https://www.instagram.com/thoseguyscafe/",
+    "image": null,
+    "source": "those-guys-cafe"
   },
   {
     "id": "cb9d17adf6c2",
@@ -183,6 +246,22 @@
     "source": "4roots-farm"
   },
   {
+    "id": "58085cd029a5",
+    "title": "Tufting Workshop",
+    "start": "2026-10-13T12:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
     "id": "da311c9852f9",
     "title": "Food as Medicine: Eating Well for Breast Cancer Prevention",
     "start": "2026-10-13T18:00:00-04:00",
@@ -196,6 +275,22 @@
     "url": "https://4rootsfarm.org/event/food-as-medicine-eating-well-for-breast-cancer-prevention/",
     "image": "https://4rootsfarm.org/wp-content/uploads/2025/12/Newsletter-Images_Horizontal-Collage-33-Large.jpeg",
     "source": "4roots-farm"
+  },
+  {
+    "id": "dceb75ea97d9",
+    "title": "Tufting Workshop",
+    "start": "2026-10-13T18:30:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
   },
   {
     "id": "3f33d0f2dc3b",
@@ -261,6 +356,22 @@
     "source": "4roots-farm"
   },
   {
+    "id": "9417bd124efd",
+    "title": "Halloween Movie Night: IT & IT Chapter Two",
+    "start": "2026-10-14T19:00:00-04:00",
+    "end": null,
+    "location": "Lamp & Shade Craft Kitchen and Cocktails",
+    "description": "Halloween movie showtime at Lamp & Shade Craft Kitchen and Cocktails. Halloween cocktail menu, all cocktails $12.",
+    "price": null,
+    "categories": [
+      "arts-culture",
+      "food-drink"
+    ],
+    "url": "https://www.instagram.com/throwsomeshadeorl/",
+    "image": null,
+    "source": "lamp-and-shade"
+  },
+  {
     "id": "3a6b1eb41ac8",
     "title": "Paint & Sip Pottery Night",
     "start": "2026-10-15T22:30:00.000Z",
@@ -321,6 +432,22 @@
     "source": "4roots-farm"
   },
   {
+    "id": "c4496efe5259",
+    "title": "Tufting Workshop",
+    "start": "2026-10-17T12:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
     "id": "349b4a10c01c",
     "title": "Mama & Mini Pilates",
     "start": "2026-10-17T14:00:00.000Z",
@@ -334,6 +461,21 @@
     "url": "https://www.houseonlang.com/event-details/mama-mini-pilates",
     "image": "https://static.wixstatic.com/media/0deec1_f928ee3042aa40db9047b3520a17acf8~mv2.jpg",
     "source": "house-on-lang"
+  },
+  {
+    "id": "5145c4aef35e",
+    "title": "Little Jenny Bakes Pop-Up",
+    "start": "2026-10-18T10:00:00-04:00",
+    "end": "2026-10-18T14:00:00-04:00",
+    "location": "Rugged Perspective",
+    "description": "@littlejennybakes. From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
   },
   {
     "id": "847c3d12f30b",
@@ -383,6 +525,22 @@
     "source": "house-on-lang"
   },
   {
+    "id": "98e56135d533",
+    "title": "Halloween Movie Night: Halloween",
+    "start": "2026-10-21T19:30:00-04:00",
+    "end": null,
+    "location": "Lamp & Shade Craft Kitchen and Cocktails",
+    "description": "Halloween movie showtime at Lamp & Shade Craft Kitchen and Cocktails. Halloween cocktail menu, all cocktails $12.",
+    "price": null,
+    "categories": [
+      "arts-culture",
+      "food-drink"
+    ],
+    "url": "https://www.instagram.com/throwsomeshadeorl/",
+    "image": null,
+    "source": "lamp-and-shade"
+  },
+  {
     "id": "2d703f4ebcf2",
     "title": "Silk Scarf Custom Dying",
     "start": "2026-10-21T22:00:00.000Z",
@@ -398,6 +556,22 @@
     "source": "house-on-lang"
   },
   {
+    "id": "d6d05e1969d1",
+    "title": "Tufting Workshop",
+    "start": "2026-10-22T12:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
     "id": "5ba34275f158",
     "title": "Community Plant-Based Potluck",
     "start": "2026-10-22T18:00:00-04:00",
@@ -411,6 +585,22 @@
     "url": "https://4rootsfarm.org/event/community-plant-based-potluck-3/",
     "image": "https://4rootsfarm.org/wp-content/uploads/2025/12/Newsletter-Images_Horizontal-Collage-67.png",
     "source": "4roots-farm"
+  },
+  {
+    "id": "96566882e81a",
+    "title": "Tufting Workshop",
+    "start": "2026-10-22T18:30:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
   },
   {
     "id": "e4ead6189d5b",
@@ -441,6 +631,38 @@
     "url": "https://www.houseonlang.com/event-details/full-moon-yoga-in-backyard-1-30",
     "image": "https://static.wixstatic.com/media/51f7d5_0f217935830b4f5cb8352d03f7ad66fd~mv2.jpg",
     "source": "house-on-lang"
+  },
+  {
+    "id": "461605f95c59",
+    "title": "Tufting Workshop",
+    "start": "2026-10-23T12:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
+    "id": "425322468854",
+    "title": "Tufting Workshop",
+    "start": "2026-10-23T18:30:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
   },
   {
     "id": "baacb144c9fa",
@@ -489,6 +711,22 @@
     "source": "4roots-farm"
   },
   {
+    "id": "bcb0d1b535d8",
+    "title": "Tufting Workshop",
+    "start": "2026-10-24T12:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
     "id": "e3607d26ac9a",
     "title": "Spooky Season Reflection",
     "start": "2026-10-24T16:00:00.000Z",
@@ -502,6 +740,38 @@
     "url": "https://www.houseonlang.com/event-details/spooky-season-reflection",
     "image": "https://static.wixstatic.com/media/0deec1_2e2d913a20c54b2eb623369990461475~mv2.png",
     "source": "house-on-lang"
+  },
+  {
+    "id": "c5e0df5a5be4",
+    "title": "Tufting Workshop",
+    "start": "2026-10-24T18:30:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
+    "id": "8f09ff2f044f",
+    "title": "Cake with @bychefblu",
+    "start": "2026-10-25",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "Time not listed. From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "food-drink",
+      "workshop-class"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
   },
   {
     "id": "1ff18c543ff7",
@@ -519,6 +789,53 @@
     "source": "4roots-farm"
   },
   {
+    "id": "5c60ce9fe0a5",
+    "title": "Date Night",
+    "start": "2026-10-27T18:30:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "community"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
+    "id": "78ad9c6255fb",
+    "title": "Ghouls Night Out: Halloween Costume Party",
+    "start": "2026-10-27T19:00:00-04:00",
+    "end": "2026-10-27T21:00:00-04:00",
+    "location": "Zymarium Meadery",
+    "description": "Craft Club Orlando presents a Halloween costume party at Zymarium. 21+. Costume contest, crafty activities, photo booth, and freebies for all.",
+    "price": "Early bird $25",
+    "categories": [
+      "community",
+      "workshop-class"
+    ],
+    "url": "https://www.instagram.com/craftcluborlando/",
+    "image": null,
+    "source": "craft-club-orlando"
+  },
+  {
+    "id": "0636a1208b56",
+    "title": "Halloween Movie Night: Jason vs. Freddy",
+    "start": "2026-10-28T19:30:00-04:00",
+    "end": null,
+    "location": "Lamp & Shade Craft Kitchen and Cocktails",
+    "description": "Halloween movie showtime at Lamp & Shade Craft Kitchen and Cocktails. Halloween cocktail menu, all cocktails $12.",
+    "price": null,
+    "categories": [
+      "arts-culture",
+      "food-drink"
+    ],
+    "url": "https://www.instagram.com/throwsomeshadeorl/",
+    "image": null,
+    "source": "lamp-and-shade"
+  },
+  {
     "id": "3cbc2a4d24e6",
     "title": "Pumpkin Painting",
     "start": "2026-10-28T22:00:00.000Z",
@@ -534,6 +851,22 @@
     "source": "house-on-lang"
   },
   {
+    "id": "d6c2795b3e80",
+    "title": "Tufting Workshop",
+    "start": "2026-10-29T12:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
+  },
+  {
     "id": "c9bf53442e6a",
     "title": "Make & Take: Strawberry Pot Painting Workshop",
     "start": "2026-10-29T18:00:00-04:00",
@@ -547,6 +880,22 @@
     "url": "https://4rootsfarm.org/event/make-take-diy-strawberry-pot-painting/",
     "image": "https://4rootsfarm.org/wp-content/uploads/2026/09/lcriz8na2bfauxxuzwfi.webp",
     "source": "4roots-farm"
+  },
+  {
+    "id": "844bf54eed08",
+    "title": "Bake Club",
+    "start": "2026-10-30T18:30:00-04:00",
+    "end": "2026-10-30T20:30:00-04:00",
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "food-drink",
+      "community"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
   },
   {
     "id": "e38fd2a58b52",
@@ -577,6 +926,21 @@
     "url": "https://4rootsfarm.org/event/char-boo-terie-workshop-with-journey-across-the-board/",
     "image": "https://4rootsfarm.org/wp-content/uploads/2026/09/charbooteriew.jpeg",
     "source": "4roots-farm"
+  },
+  {
+    "id": "0e565171c8a9",
+    "title": "Tile Side Table Workshop",
+    "start": "2026-10-31T12:00:00-04:00",
+    "end": null,
+    "location": "Rugged Perspective",
+    "description": "From Rugged Perspective's October calendar. Want to book a date not listed? Email tufting@ruggedperspective.com or DM them.",
+    "price": null,
+    "categories": [
+      "workshop-class"
+    ],
+    "url": null,
+    "image": null,
+    "source": "rugged-perspective"
   },
   {
     "id": "d94aad0db301",
@@ -731,6 +1095,21 @@
     "url": "https://4rootsfarm.org/event/4roots-farmers-market-26/",
     "image": "https://4rootsfarm.org/wp-content/uploads/2025/12/Newsletter-Images_Horizontal-Collage-66.png",
     "source": "4roots-farm"
+  },
+  {
+    "id": "d7559182caee",
+    "title": "Cool Things: A Holiday Gift Market",
+    "start": "2026-12-06T11:00:00-05:00",
+    "end": "2026-12-06T15:00:00-05:00",
+    "location": "221 S Bumby Ave, Orlando",
+    "description": "2 Girls and a Market presents Cool Things, a holiday gift market, in collaboration with Phat Ash Bakes and Easy Luck. Coffee, cookies, and cool things — shop local!",
+    "price": null,
+    "categories": [
+      "market"
+    ],
+    "url": "https://www.instagram.com/2girlsandamarket/",
+    "image": null,
+    "source": "2-girls-and-a-market"
   },
   {
     "id": "60ac73c3afc1",

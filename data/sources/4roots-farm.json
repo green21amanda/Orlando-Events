@@ -1,35 +1,5 @@
 [
   {
-    "id": "b09453c77558",
-    "title": "Origin | Roots",
-    "start": "2026-10-01T18:00:00-04:00",
-    "end": "2026-10-01T21:00:00-04:00",
-    "location": "4Roots Farm Campus, 1101 N. John Young Parkway, Parkway Orlando",
-    "description": "Origin invites guests to experience not simply what is on the plate, but everything that came before it. Nestled among the gardens and fields of the 4Roots Farm Campus, Origin is an intimate dining experience where the story of every remarkable meal begins. In partnership with a celebrated guest chef, a local farmer, and 4Roots’ Chef Hari Pulapaka, each dinner is a unique exploration of the season—never repeated, and rooted in what the land has to offer at that moment. Origin is more than fine dining. It is an invitation to experience food with a deeper sense of wonder. Not simply where food is served. But where its story begins. This Month’s Theme & Featured Chef The Origin season begins with Roots , a celebration of the agricultural foundations of our region through autumn harvests and timeless cooking traditions. This one-night-only dining inaugural dinner features acclaimed Central Florida chef Kevin Fonzo , a James Beard Award semifinalist and one of Orlando’s original pioneers of the local food movement. Event Details Date: Thursday, October 1st Location: 4Roots Farm Campus – Food Forest Lawn + Barn Time: 6:00pm – 9:00pm Tickets: $175 per guest. Each ticket purchase supports local farms and the mission of 4Roots to create greater food access and education in our community.",
-    "price": "175$",
-    "categories": [
-      "community"
-    ],
-    "url": "https://4rootsfarm.org/event/origin-roots/",
-    "image": "https://4rootsfarm.org/wp-content/uploads/2026/07/4Roots-Origin_Square-Website.png",
-    "source": "4roots-farm"
-  },
-  {
-    "id": "9e5c6e656f93",
-    "title": "4Roots Farmers Market",
-    "start": "2026-10-03T09:00:00-04:00",
-    "end": "2026-10-03T13:00:00-04:00",
-    "location": "4Roots Farm Campus, 1101 N. John Young Parkway, Parkway Orlando",
-    "description": "Presented by Dr. Phillips Charities All are invited to the 4Roots Farmers Market presented by Dr. Phillips Charities , hosted at the 4Roots Farm Campus every Saturday! Bring the whole family (fur family included) to shop farm-fresh produce, handcrafted goods, and support all things locally-made. In addition to the 4Roots Mobile Market (which accepts SNAP & FAB) local vendors and artisans will be on-site offering farm-fresh produce, handcrafted goods, and tasty treats. Whether you’re picking up a fresh-made snack, exploring local goods, or just spending quality time together in a beautiful setting, it’s the perfect way to support our local community.",
-    "price": null,
-    "categories": [
-      "market"
-    ],
-    "url": "https://4rootsfarm.org/event/4roots-farmers-market-5/",
-    "image": "https://4rootsfarm.org/wp-content/uploads/2025/12/Newsletter-Images_Horizontal-Collage-66.png",
-    "source": "4roots-farm"
-  },
-  {
     "id": "5daf61806eab",
     "title": "2nd Annual Farm to Healthcare: 2026 CME Conference",
     "start": "2026-10-09T00:00:00-04:00",

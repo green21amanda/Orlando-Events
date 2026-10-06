@@ -39,18 +39,27 @@ def is_upcoming(event, today):
 
 
 def load_all_events():
-    events = []
-    if MANUAL_FILE.exists():
-        events.extend(json.loads(MANUAL_FILE.read_text()))
+    manual = json.loads(MANUAL_FILE.read_text()) if MANUAL_FILE.exists() else []
+    auto = []
     if SOURCES_DIR.exists():
         for path in sorted(SOURCES_DIR.glob("*.json")):
-            events.extend(json.loads(path.read_text()))
-    return events
+            auto.extend(json.loads(path.read_text()))
+    return manual, auto
+
+
+def event_date_key(event):
+    return (event["source"], parse_start(event).date())
 
 
 def main():
     today = date.today()
-    all_events = load_all_events()
+    manual, auto = load_all_events()
+
+    # A hand-entered event (read from a flyer/screenshot) beats an automated
+    # one for the same source and day, e.g. the same pop-up seen both ways.
+    manual_keys = {event_date_key(ev) for ev in manual}
+    auto = [ev for ev in auto if event_date_key(ev) not in manual_keys]
+    all_events = manual + auto
 
     seen_ids = set()
     deduped = []
