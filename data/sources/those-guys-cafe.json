@@ -1,98 +1,8 @@
 [
   {
-    "id": "c9215042999d",
-    "title": "Those Guys Cafe Pop-Up @lakewalkathamlin",
-    "start": "2026-10-09",
-    "end": null,
-    "location": "@lakewalkathamlin (see Instagram for exact address)",
-    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
-    "price": null,
-    "categories": [
-      "food-drink"
-    ],
-    "url": "https://instagram.com/lakewalkathamlin",
-    "image": null,
-    "source": "those-guys-cafe"
-  },
-  {
-    "id": "52d8a34322c2",
-    "title": "Those Guys Cafe Pop-Up @tresivanhoesalon",
-    "start": "2026-10-11",
-    "end": null,
-    "location": "@tresivanhoesalon (see Instagram for exact address)",
-    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
-    "price": null,
-    "categories": [
-      "food-drink"
-    ],
-    "url": "https://instagram.com/tresivanhoesalon",
-    "image": null,
-    "source": "those-guys-cafe"
-  },
-  {
-    "id": "c506c6717a07",
-    "title": "Those Guys Cafe Pop-Up @maitlandpointe",
-    "start": "2026-09-29",
-    "end": null,
-    "location": "@maitlandpointe (see Instagram for exact address)",
-    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
-    "price": null,
-    "categories": [
-      "food-drink"
-    ],
-    "url": "https://instagram.com/maitlandpointe",
-    "image": null,
-    "source": "those-guys-cafe"
-  },
-  {
-    "id": "680cf83a1b88",
-    "title": "Those Guys Cafe Pop-Up @parkwaycrossings",
-    "start": "2026-10-02",
-    "end": null,
-    "location": "@parkwaycrossings (see Instagram for exact address)",
-    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
-    "price": null,
-    "categories": [
-      "food-drink"
-    ],
-    "url": "https://instagram.com/parkwaycrossings",
-    "image": null,
-    "source": "those-guys-cafe"
-  },
-  {
-    "id": "1ff5334877df",
-    "title": "Those Guys Cafe Pop-Up @junowinterpark",
-    "start": "2026-09-23",
-    "end": null,
-    "location": "@junowinterpark (see Instagram for exact address)",
-    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
-    "price": null,
-    "categories": [
-      "food-drink"
-    ],
-    "url": "https://instagram.com/junowinterpark",
-    "image": null,
-    "source": "those-guys-cafe"
-  },
-  {
-    "id": "5084f1d14444",
-    "title": "Those Guys Cafe Pop-Up @lnperformanceclub",
-    "start": "2026-09-24",
-    "end": null,
-    "location": "@lnperformanceclub (see Instagram for exact address)",
-    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
-    "price": null,
-    "categories": [
-      "food-drink"
-    ],
-    "url": "https://instagram.com/lnperformanceclub",
-    "image": null,
-    "source": "those-guys-cafe"
-  },
-  {
-    "id": "aff08b6a6ef5",
+    "id": "3323b74ab91c",
     "title": "Those Guys Cafe Pop-Up @thehouseonlang",
-    "start": "2026-09-26",
+    "start": "2026-11-13",
     "end": null,
     "location": "@thehouseonlang (see Instagram for exact address)",
     "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
@@ -105,17 +15,62 @@
     "source": "those-guys-cafe"
   },
   {
-    "id": "109b8af76a3f",
-    "title": "Those Guys Cafe Pop-Up @sunshi",
-    "start": "2026-09-27",
+    "id": "8c0ee46e2cdc",
+    "title": "Those Guys Cafe Pop-Up @milliesswedishcandy",
+    "start": "2026-11-14",
     "end": null,
-    "location": "@sunshi (see Instagram for exact address)",
+    "location": "@milliesswedishcandy (see Instagram for exact address)",
     "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
     "price": null,
     "categories": [
       "food-drink"
     ],
-    "url": "https://instagram.com/sunshi",
+    "url": "https://instagram.com/milliesswedishcandy",
+    "image": null,
+    "source": "those-guys-cafe"
+  },
+  {
+    "id": "b5f29cb9c35a",
+    "title": "Those Guys Cafe Pop-Up @sunshinebookco",
+    "start": "2026-11-15",
+    "end": null,
+    "location": "@sunshinebookco (see Instagram for exact address)",
+    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": "https://instagram.com/sunshinebookco",
+    "image": null,
+    "source": "those-guys-cafe"
+  },
+  {
+    "id": "744e9716b34a",
+    "title": "Those Guys Cafe Pop-Up @rollinscollege",
+    "start": "2026-11-03",
+    "end": null,
+    "location": "@rollinscollege (see Instagram for exact address)",
+    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": "https://instagram.com/rollinscollege",
+    "image": null,
+    "source": "those-guys-cafe"
+  },
+  {
+    "id": "748cab6fd309",
+    "title": "Those Guys Cafe Pop-Up @lakewalkathamlin",
+    "start": "2026-11-04",
+    "end": null,
+    "location": "@lakewalkathamlin (see Instagram for exact address)",
+    "description": "Time not listed -- check Those Guys Cafe's Instagram for exact hours and any last-minute changes.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": "https://instagram.com/lakewalkathamlin",
     "image": null,
     "source": "those-guys-cafe"
   }
