@@ -722,5 +722,85 @@
     "url": "https://www.instagram.com/citrusmrket/",
     "image": null,
     "source": "citrus-market"
+  },
+  {
+    "id": "b773f3477251",
+    "title": "After Hours: Sew Your Own Stocking",
+    "start": "2026-12-03",
+    "end": null,
+    "location": "Uptown Stitch Design Studio",
+    "description": "Create your own stocking! Pick your fabric, get creative, and enjoy a fun, social evening of making. Time not listed; check the booking page.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": "https://uptownstitchoakland.com/sewing-classes/",
+    "image": null,
+    "source": "uptown-stitch"
+  },
+  {
+    "id": "c23a6ebc083c",
+    "title": "After Hours: Paint & Decorate a Nutcracker",
+    "start": "2026-12-10T18:00:00-05:00",
+    "end": "2026-12-10T20:00:00-05:00",
+    "location": "Uptown Stitch Design Studio",
+    "description": "Paint and decorate your own nutcracker in a fun, social class. Ages 18 and up only.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": "https://uptownstitchoakland.com/sewing-classes/",
+    "image": null,
+    "source": "uptown-stitch"
+  },
+  {
+    "id": "51e48cd3818f",
+    "title": "After Hours: Paint & Decorate a Nutcracker",
+    "start": "2026-12-12T14:00:00-05:00",
+    "end": "2026-12-12T17:00:00-05:00",
+    "location": "Uptown Stitch Design Studio",
+    "description": "Paint and decorate your own nutcracker in a fun, social class. Ages 18 and up only.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": "https://uptownstitchoakland.com/sewing-classes/",
+    "image": null,
+    "source": "uptown-stitch"
+  },
+  {
+    "id": "98c613a972b0",
+    "title": "After Hours: Reversible Tote Bag",
+    "start": "2026-11-26",
+    "end": null,
+    "location": "Uptown Stitch Design Studio",
+    "description": "Create a reversible bag with interchangeable handles. Adults 18 and up. Please confirm date and time on the booking page: it shows Nov 26 (Thanksgiving) as the next date, but the class text still says Nov 19, 6-8 PM.",
+    "price": null,
+    "categories": [
+      "workshop-class",
+      "arts-culture"
+    ],
+    "url": "https://uptownstitchoakland.com/sewing-classes/",
+    "image": null,
+    "source": "uptown-stitch"
+  },
+  {
+    "id": "4c7116714802",
+    "title": "Helena Snow Angels Christmas Pop-Up Bar",
+    "start": "2026-11-14",
+    "end": "2027-01-17",
+    "location": "Helena Modern Riviera at ICON Park, 8441 International Dr, Suite 260, Orlando",
+    "description": "A white-and-gold Christmas pop-up bar with seasonal cocktails, a dessert and four seasonal dishes.\n\nDoors open 1 PM Monday-Thursday and 11 AM Friday-Sunday. Marrakech Nights on Saturdays 6-11 PM; Helena Girls Night on Wednesdays 6-10 PM. Walk-ins welcome; reservations recommended on December weekends. Free parking on floors 4-7 of the ICON Park garage.",
+    "price": null,
+    "categories": [
+      "food-drink"
+    ],
+    "url": "https://helenamodernriviera.com/helena-snow-angels/",
+    "image": null,
+    "source": "helena",
+    "ongoing": true
   }
 ]

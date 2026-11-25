@@ -35,7 +35,11 @@ def is_upcoming(event, today):
     except (ValueError, TypeError):
         return False
     start_date = start.date() if isinstance(start, datetime) else start
-    return today <= start_date <= today + timedelta(days=HORIZON_DAYS)
+    horizon = today + timedelta(days=HORIZON_DAYS)
+    if event.get("ongoing"):
+        # Stays listed until its last day, even though it already started.
+        return start_date <= horizon and dateparser.parse(event["end"]).date() >= today
+    return today <= start_date <= horizon
 
 
 def load_all_events():

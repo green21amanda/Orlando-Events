@@ -85,6 +85,10 @@ Every event (from any source) is normalized to:
 }
 ```
 
+For something that runs over a stretch of days (a pop-up, an exhibit), add
+`"ongoing": true` with `start` and `end` dates. It shows in the sidebar's
+Ongoing section instead of on calendar days, until its `end` date passes.
+
 `scripts/merge.py` drops events in the past and further out than 120 days,
 dedupes by `id`, and sorts by start date.
 

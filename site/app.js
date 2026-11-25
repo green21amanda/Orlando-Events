@@ -59,8 +59,32 @@ function matchesActiveFilters(ev) {
   return ev.categories.some((c) => !state.hiddenCategories.has(c));
 }
 
+// Dated events only; ongoing ones live in their own sidebar section.
 function getFilteredEvents() {
-  return state.events.filter(matchesActiveFilters);
+  return state.events.filter((ev) => !ev.ongoing && matchesActiveFilters(ev));
+}
+
+function getOngoingEvents() {
+  return state.events.filter((ev) => ev.ongoing && matchesActiveFilters(ev));
+}
+
+function formatShortDate(value) {
+  return parseEventDate({ start: value }).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+
+function formatOngoingRange(ev) {
+  const started = dayKey(parseEventDate(ev)) <= dayKey(new Date());
+  return started
+    ? `Now through ${formatShortDate(ev.end)}`
+    : `${formatShortDate(ev.start)} \u2013 ${formatShortDate(ev.end)}`;
+}
+
+function renderOngoing() {
+  const list = document.getElementById("ongoing-list");
+  const events = getOngoingEvents();
+  list.innerHTML = "";
+  events.forEach((ev) => list.appendChild(renderSideItem(ev, formatOngoingRange(ev))));
+  document.getElementById("ongoing-section").hidden = events.length === 0;
 }
 
 // ---------- Filter bar ----------
@@ -280,12 +304,15 @@ function renderWeekend() {
         : "Nothing this weekend in the selected types.";
     grid.appendChild(empty);
   } else {
-    events.forEach((ev) => grid.appendChild(renderWeekendItem(ev)));
+    events.forEach((ev) => {
+      const day = parseEventDate(ev).toLocaleDateString(undefined, { weekday: "short" });
+      grid.appendChild(renderSideItem(ev, `${day} \u00b7 ${formatEventTime(ev)}`));
+    });
   }
   section.hidden = false;
 }
 
-function renderWeekendItem(ev) {
+function renderSideItem(ev, metaText) {
   const item = document.createElement("div");
   item.className = "weekend-item";
   item.style.setProperty("--item-accent", `var(--cat-${ev.categories[0] || "other"})`);
@@ -296,8 +323,7 @@ function renderWeekendItem(ev) {
 
   const meta = document.createElement("div");
   meta.className = "wi-meta";
-  const day = parseEventDate(ev).toLocaleDateString(undefined, { weekday: "short" });
-  meta.textContent = `${day} · ${formatEventTime(ev)}`;
+  meta.textContent = metaText;
 
   item.append(title, meta);
   item.addEventListener("click", () => openModal(ev));
@@ -355,7 +381,10 @@ function openModal(ev) {
   const meta = document.createElement("div");
   meta.className = "modal-meta";
   const date = parseEventDate(ev);
-  meta.textContent = [formatDateHeading(date), formatEventTime(ev), ev.location, ev.price]
+  const when = ev.ongoing
+    ? [formatOngoingRange(ev)]
+    : [formatDateHeading(date), formatEventTime(ev)];
+  meta.textContent = [...when, ev.location, ev.price]
     .filter(Boolean)
     .join(" · ");
   body.appendChild(meta);
@@ -396,9 +425,11 @@ function closeModal() {
 function renderCurrentView() {
   const count = getFilteredEvents().length;
   document.getElementById("event-count-subtitle").textContent =
-    `${count} upcoming event${count === 1 ? "" : "s"}`;
+    `${count} upcoming event${count === 1 ? "" : "s"}` +
+    (getOngoingEvents().length ? ` \u00b7 ${getOngoingEvents().length} ongoing` : "");
 
   renderWeekend();
+  renderOngoing();
 
   if (state.view === "calendar") {
     renderCalendar();
